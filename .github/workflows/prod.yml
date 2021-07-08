@@ -9,7 +9,6 @@ on:
 
 jobs:
   build-and-push:
-    needs: test
     name: Build and Push
     runs-on: ubuntu-latest
     steps:
