@@ -18,9 +18,26 @@ Enter the directory
 cd express-quickstart
 ```
 
+### Run locally / in development
+
 Run the Express Server
 ```zsh
 npm start
+```
+
+### Run via Docker
+
+Install [Docker Desktop](https://docs.docker.com/get-docker/)
+Create a [Docker Hub Account](https://hub.docker.com)
+
+Build the Docker Image
+```zsh
+docker build . -t your-username/express-quickstart
+```
+
+Run the Image on a Docker Container
+```zsh
+docker run -p 49160:8080 -d your-username/express-quickstart
 ```
 
 ## How to Contribute
