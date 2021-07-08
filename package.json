@@ -1,0 +1,22 @@
+{
+  "name": "Express-Quickstart",
+  "version": "0.0.1",
+  "description": "This will be a pre-built empty express server with basic testing and CI/CD through Docker and Heroku.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Docker",
+    "Heroku",
+    "Quickstart",
+    "Template",
+    "Express",
+    "Node"
+  ],
+  "author": "Secundino Martinez <Dino.Martinez.514@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
