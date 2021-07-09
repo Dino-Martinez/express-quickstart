@@ -4,7 +4,7 @@
   "description": "This will be a pre-built empty express server with basic testing and CI/CD through Docker and Heroku.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node src/server.js",
     "test": "jest --verbose --maxWorkers=2",
     "lint": "eslint .",
     "fix": "eslint . --fix"
