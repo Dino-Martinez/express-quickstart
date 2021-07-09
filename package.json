@@ -15,7 +15,8 @@
     "Quickstart",
     "Template",
     "Express",
-    "Node"
+    "Node",
+    "CI/CD"
   ],
   "author": "Secundino Martinez <Dino.Martinez.514@gmail.com>",
   "license": "ISC",
