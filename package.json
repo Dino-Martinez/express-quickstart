@@ -4,7 +4,8 @@
   "description": "This will be a pre-built empty express server with basic testing and CI/CD through Docker and Heroku.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest --watchAll --verbose"
   },
   "keywords": [
     "Docker",
@@ -18,5 +19,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "supertest": "^6.1.3"
   }
 }
