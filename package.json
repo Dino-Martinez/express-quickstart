@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "jest --watchAll --verbose",
+    "test": "jest --verbose --maxWorkers=2",
     "lint": "eslint .",
     "fix": "eslint . --fix"
   },
