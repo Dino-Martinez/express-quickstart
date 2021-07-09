@@ -39,18 +39,31 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Login to DockerHub
-        uses: docker/login-action@v1
+      # This block will deploy the docker container to heroku
+      - name: Build, Push and Deploy to Heroku
+        id: heroku
+        uses: jctaveras/heroku-deploy@v1.0.0
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+          email: ${{ secrets.HEROKU_EMAIL }}
+          api_key: ${{ secrets.HEROKU_API_KEY }}
+          app_name: ${{ secrets.HEROKU_APP_NAME }}
+          dockerfile_path: '.'
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
-
-      - name: Build and push
-        uses: docker/build-push-action@v2
-        with:
-          file: ./Dockerfile
-          tags: dinomartinez/express-quickstart:latest
-          push: true
+      # This block will deploy the docker container to docker hub
+      # This will require setting up some kind of watchtower through a service
+      # like Digital Ocean.
+      # - name: Login to DockerHub
+      #   uses: docker/login-action@v1
+      #   with:
+      #     username: ${{ secrets.DOCKER_USERNAME }}
+      #     password: ${{ secrets.DOCKER_TOKEN }}
+      #
+      # - name: Set up Docker Buildx
+      #   uses: docker/setup-buildx-action@v1
+      #
+      # - name: Build and push
+      #   uses: docker/build-push-action@v2
+      #   with:
+      #     file: ./Dockerfile
+      #     tags: dinomartinez/express-quickstart:latest
+      #     push: true
