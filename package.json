@@ -1,6 +1,6 @@
 {
   "name": "express-quickstart",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "This will be a pre-built empty express server with basic testing and CI/CD through Docker and Heroku.",
   "main": "server.js",
   "scripts": {
