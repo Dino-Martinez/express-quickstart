@@ -1,5 +1,5 @@
 {
-  "name": "Express-Quickstart",
+  "name": "express-quickstart",
   "version": "0.2.0",
   "description": "This will be a pre-built empty express server with basic testing and CI/CD through Docker and Heroku.",
   "main": "server.js",
@@ -21,7 +21,11 @@
   "author": "Secundino Martinez <Dino.Martinez.514@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "eslint": "^7.30.0",
