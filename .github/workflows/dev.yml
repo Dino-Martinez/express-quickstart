@@ -2,8 +2,8 @@ name: Test and Lint development code
 
 on:
   push:
-    branches:
-      - dev
+    branches-ignore:
+      - production
     paths-ignore:
       - '**.md'
 
