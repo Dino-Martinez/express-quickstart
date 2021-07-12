@@ -12,7 +12,7 @@ const app = express()
 app.use(morgan('common'))
 app.use(helmet())
 app.use(cors())
-app.use(express.urlencoded()) // Handling form data
+app.use(express.urlencoded({ extended: true })) // Handling form data
 app.use(express.json()) // Handling JSON data
 app.use(compression())
 
