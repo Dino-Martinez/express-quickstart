@@ -2,6 +2,8 @@
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/Dino-Martinez/express-quickstart/blob/production/LICENSE) ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Dino-Martinez/express-quickstart) ![GitHub package.json version](https://img.shields.io/github/package-json/v/Dino-Martinez/express-quickstart) ![GitHub last commit](https://img.shields.io/github/last-commit/dino-martinez/express-quickstart) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dino-martinez/express-quickstart/Build%20and%20Push%20to%20Docker%20Hub/production) ![GitHub repo size](https://img.shields.io/github/repo-size/dino-martinez/express-quickstart)
 
+<img src="https://images.unsplash.com/photo-1523238469729-2aa7b7f067f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1454&q=80" alt="Hero Image">
+
 This repo will serve as a quickstart template for express servers with built-in CI/CD workflow that deploys via Docker and Heroku.
 
 ## Table of Contents
